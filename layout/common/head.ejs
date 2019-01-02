@@ -41,6 +41,8 @@
     }) %>
     <%- meta(page) %>
 
+    <%- autoCanonical(config, page) %>
+
     <% if (theme.customize && theme.customize.social_links && theme.customize.social_links.rss) { %>
         <link rel="alternate" href="<%- theme.customize.social_links.rss %>" title="<%= config.title %>" type="application/atom+xml" />
     <% } %>
@@ -53,6 +55,8 @@
     <%- css('libs/titillium-web/styles') %>
     <%- css('libs/source-code-pro/styles') %>
 
+    <%- css('https://cdn.rawgit.com/jmnote/IropkeBatang/master/iropkebatang.css') %>
+    <%- css('https://cdn.rawgit.com/kattergil/NotoSerifKR-Web/76eb9ebf/stylesheet/NotoSerif-Web.css') %>
     <%- css('css/style') %>
 
     <%- js('libs/jquery/3.3.1/jquery.min') %>
